@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  test-docker-app:
+    container_name: test-docker-app
+    image: test-docker/app:latest
+    ports:
+      - "8000:8000"
+    restart: on-failure
