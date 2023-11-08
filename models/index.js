@@ -9,15 +9,12 @@ const sequelize = new Sequelize(
     {
         host: dbConfig.HOST,
         dialect: dbConfig.DIALECT,
-        // port: dbConfig.PORT,
+        port: dbConfig.PORT,
         define: {
             timestamps: false,
             freezeTableName: true
         },
-        logging: false,
-        dialectOptions: {
-            requestTimeout: 30000,
-        }
+        logging: true
     }
 );
 
