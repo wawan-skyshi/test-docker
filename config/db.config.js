@@ -1,5 +1,5 @@
 const dbConfig = {
-    HOST: 'msib-mysql-db',
+    HOST: '172.27.0.2',
     USER: 'root',
     PASSWORD: 'root@msib',
     DB: 'msib_squad2',
