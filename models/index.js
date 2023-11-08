@@ -14,7 +14,11 @@ const sequelize = new Sequelize(
             timestamps: false,
             freezeTableName: true
         },
-        logging: false
+        logging: false,
+        dialectOptions: {
+            requestTimeout: 30000,
+            encrypt: true
+        }
     }
 );
 
