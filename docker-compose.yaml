@@ -8,8 +8,9 @@ services:
       - "8000:8000"
     restart: on-failure
     networks:
-      - lognet
+      - mynetwork
 
 networks:
-  lognet:
-    driver: bridge
+  mynetwork:
+    external:
+      name: mysqlnet
