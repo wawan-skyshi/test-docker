@@ -1,10 +1,10 @@
 const dbConfig = {
-    HOST: '195.35.32.179',
+    HOST: 'msib-mysql-db',
     USER: 'root',
     PASSWORD: 'root@msib',
     DB: 'msib_squad2',
     DIALECT: 'mysql',
-    PORT: 4000
+    PORT: 3306
 };
 
 module.exports = dbConfig;
