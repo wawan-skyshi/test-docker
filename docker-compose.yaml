@@ -7,3 +7,9 @@ services:
     ports:
       - "8000:8000"
     restart: on-failure
+    networks:
+      - lognet
+
+networks:
+  lognet:
+    driver: bridge
