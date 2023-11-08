@@ -17,7 +17,6 @@ const sequelize = new Sequelize(
         logging: false,
         dialectOptions: {
             requestTimeout: 30000,
-            encrypt: true
         }
     }
 );
