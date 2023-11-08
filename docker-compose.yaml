@@ -8,9 +8,8 @@ services:
       - "8000:8000"
     restart: on-failure
     networks:
-      - mynetwork
+      - mysqlnet
 
 networks:
-  mynetwork:
-    external:
-      name: mysqlnet
+  mysqlnet:
+      external: true
