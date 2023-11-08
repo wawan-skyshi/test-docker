@@ -7,9 +7,3 @@ services:
     ports:
       - "8000:8000"
     restart: on-failure
-    networks:
-      - mysqlnet
-
-networks:
-  mysqlnet:
-      external: true
